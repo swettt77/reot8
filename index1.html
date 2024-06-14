@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ali9.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+        <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   
+    <title>Reot</title>
+  </head>
+  <body>
+    
+    <header>
+      <div class="container top-nav">
+        <a href="#" class="logo"><img src=".jpg"   alt="" /></a>
+        <form action="" class="search">
+          <input type="search" placeholder="search for products..." />
+          <button type="submit">search</button>
+        </form>
+        <div class="cart_header">
+          <div onclick="open_cart()" class="icon_cart">
+            <svg class="w-[24px] h-[24px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M14 7h-4v3a1 1 0 0 1-2 0V7H6a1 1 0 0 0-.997.923l-.917 11.924A2 2 0 0 0 6.08 22h11.84a2 2 0 0 0 1.994-2.153l-.917-11.924A1 1 0 0 0 18 7h-2v3a1 1 0 1 1-2 0V7Zm-2-3a2 2 0 0 0-2 2v1H8V6a4 4 0 0 1 8 0v1h-2V6a2 2 0 0 0-2-2Z" clip-rule="evenodd"/>
+            </svg>
+            <span class="count_item">0</span>
+          </div>
+          <div class="tottal_price">
+            <p>My cart</p>
+            <p class="price_cart_Head">$0</p>
+          </div>
+        </div>
+      </div>
+      <nav>
+     <div class="links container">
+      <ul>
+        <li class="active"><a href="">home</a></li>
+        <li><a href="">all products</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+      </ul>
+      <div class="login_signup">
+        <a href="#">login<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H4m12 0-4 4m4-4-4-4m3-4h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-2"/>
+</svg>
+</a>
+        <a href="#">sign up<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <path fill-rule="evenodd" d="M9 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4H7Zm8-1a1 1 0 0 1 1-1h1v-1a1 1 0 1 1 2 0v1h1a1 1 0 1 1 0 2h-1v1a1 1 0 1 1-2 0v-1h-1a1 1 0 0 1-1-1Z" clip-rule="evenodd"/>
+</svg>
+</a>
+
+      </div>
+     </div>
+        
+      </nav>
+    </header>
+    <div class="cart">
+      <div class="top_cart">
+        <h3>My cart<span class="count_item_cart">(0item in cart)</span></h3>
+        <span onclick="close_cart()" class="close_cart"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 9-6 6m0-6 6 6m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+        </svg>
+        </span>
+      </div>
+      <div class="items_in_cart">
+
+
+      </div>
+      <div class="bottom_cart">
+        <div class="total">
+          <p>cart subtotal</p>
+          <p class="price_cart_total">$0</p>
+        </div>
+        <div class="botton_cart">
+          <a href="#" class="btn_cart">proceed to checkout</a>
+          <button class="btn_cart trans_bg">shop more</button>
+        </div>
+      </div>
+    </div>
+    <section class="slider">
+      <div class="container">
+        <div class="side_bar">
+          <h2><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+          </svg>
+          shop by derparment</h2>
+          
+          <a href="#">tgggjghghhghgg</a>
+          <a href="#">ntgggjghghhghgg</a>
+          <a href="#">ptgggjghghhghgg</a>
+          <a href="#">qtgggjghghhghgg</a>
+          <a href="#">rtgggjghghhghgg</a>
+          <a href="#">dtgggjghghhghgg</a>
+          <a href="#">atgggjghghhghgg</a>
+          <a href="#">ftgggjghghhghgg</a>
+          <a href="#">xtgggjghghhghgg</a>
+          <a href="#">btgggjghghhghgg</a>
+        </div>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#"><img src="/img/slider-01.jpg"  alt=""></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#"><img src="/img/slider-02.jpg" alt=""></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#"><img src="/img/slider-03.jpg" alt=""></a>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <div class="feature_item">
+          <img src="/img/features1.png" alt="">
+          <div class="text">
+            <h4>free shipping</h4>
+            <p>free shipping on all order</p>
+          </div>
+        </div>
+        <div class="feature_item">
+          <img src="/img/features3.png" alt="">
+          <div class="text">
+            <h4>free shipping</h4>
+            <p>free shipping on all order</p>
+          </div>
+        </div>
+        <div class="feature_item">
+          <img src="/img/features4.png" alt="">
+          <div class="text">
+            <h4>free shipping</h4>
+            <p>free shipping on all order</p>
+          </div>
+        </div>
+        <div class="feature_item">
+          <img src="/13.jpg" alt="">
+          <div class="text">
+            <h4>free shipping</h4>
+            <p>free shipping on all order</p>
+          </div>
+        </div>
+        <div class="feature_item">
+          <img src="/img/features5.png" alt="">
+          <div class="text">
+            <h4>free shipping</h4>
+            <p>free shipping on all order</p>
+          </div>
+        </div>
+        <div class="feature_item">
+          <img src="/14.jpg" alt="">
+          <div class="text">
+            <h4>free shipping</h4>
+            <p>free shipping on all order</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="container">
+        <div class="banner_img">
+          <div class="glass_hover"></div>
+          <a href=""><img src="/11.jfif" alt=""></a>
+        </div>
+        <div class="banner_img">
+          <div class="glass_hover"></div>
+          <a href=""><img src="/18.png" alt=""></a>
+        </div>
+        <div class="banner_img">
+          <div class="glass_hover"></div>
+          <a href=""><img src="/12.jpg" alt=""></a>
+        </div>
+
+      </div>
+    </section>
+ <section class="slide slide_sale">
+  <div class="container">
+    <div class="sale_sec mySwiper">
+      <div class="top_slide">
+        <h2>on sale<span>product</span></h2>
+      </div>
+     
+      <div id="swiper_items_sale" class="products swiper-wrapper">
+
+      </div>
+      
+    <div class="swiper-button-next btn_swip"></div>
+     <div class="swiper-button-prev btn_swip"></div>
+     
+    
+   
+    </div>
+  </div>
+ </section>
+ <section class="banner banner_big">
+  <div class="container">
+    <div class="banner_img">
+      <div class="glass_hover"></div>
+      <a href=""><img src="/18.png" alt=""></a>
+    </div>
+    <div class="banner_img">
+      <div class="glass_hover"></div>
+      <a href=""><img src="/12.jpg" alt=""></a>
+    </div>
+
+  </div>
+</section>
+<section class="slide slide_product">
+  <div class="container">
+    <div class="top_slide">
+      <h2>comuter desktop<span>products</span></h2>
+    </div>
+<div class="slide_with_img">
+
+  <div class="categ_img">
+    <a href="#"><img src="/20.jpg" alt=""></a>
+  </div>
+  <div class="product_swip mySwiper">
+    <div class="products other_product_swiper swiper-wrapper" id="other_product_swiper">
+
+    </div>
+          
+    <div class="swiper-button-next btn_swip"></div>
+     <div class="swiper-button-prev btn_swip"></div>
+     
+    
+   
+
+  </div>
+</div>
+  </div>
+ </section>
+ <section class="slide slide_product">
+  <div class="container">
+    <div class="top_slide">
+      <h2>comuter desktop<span>products</span></h2>
+    </div>
+<div class="slide_with_img">
+
+
+  <div class="product_swip mySwiper">
+    <div class="products other_product_swiper swiper-wrapper" id="other_product_swiper2">
+
+    </div>
+          
+    <div class="swiper-button-next btn_swip"></div>
+     <div class="swiper-button-prev btn_swip"></div>
+     
+    
+   
+
+  </div>
+  <div class="categ_img">
+    <a href="#"><img src="/20.jpg" alt=""></a>
+  </div>
+</div>
+  </div>
+ </section>
+
+
+
+ <section class="banner">
+  <div class="container">
+    <div class="banner_img">
+      <div class="glass_hover"></div>
+      <a href=""><img src="/10.jfif" alt=""></a>
+    </div>
+    <div class="banner_img">
+      <div class="glass_hover"></div>
+      <a href=""><img src="/17.jpg" alt=""></a>
+    </div>
+    <div class="banner_img">
+      <div class="glass_hover"></div>
+      <a href=""><img src="/18.png" alt=""></a>
+    </div>
+
+  </div>
+</section>
+
+    <div class="newsletter">
+      <div class="container">
+        <div class="text">
+          <img src="/10.jfif" alt="">
+          <div class="content">
+            <h4>sign up to newsletter</h4>
+            <p>wmail addi ddp</p>
+            <h6>4400$ play</h6>
+
+          </div>
+        </div>
+        <form action="" class="newsletter_form">
+          <input type="email" placeholder="Enter your email...">
+          <button type="submit">subscribe</button>
+        </form>
+      </div>
+    </div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="ali2.js"></script>
+  
+   <script src="ali.js"></script>
+    <script src="ali1.js"></script>
+   
+  </body>
+</html>
+
